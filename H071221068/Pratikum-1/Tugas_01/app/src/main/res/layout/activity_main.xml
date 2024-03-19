@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pribadi"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="129dp"
+        android:layout_height="159dp"
+        android:src="@drawable/muslim"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/highlight_backround"
+        android:layout_centerHorizontal="true"
+        android:text="Nama: Muh Ardiansyah Asrifah"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jenis Kelamin : "
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="381dp"
+        android:text="Hal yang disukai : "
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_below="@id/textViewLikes"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGame"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="MONEY!!!"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMoney"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:text="Lainnya"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGame"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="-38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/textViewGame" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMoney"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="-36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/textViewMoney" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOther1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOther"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="-33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/textViewOther" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxOther1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="Masukkan hal lainnya"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxOther1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#A0153E"
+        android:text="OK"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOk"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/displayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnOk"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/displayText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/displayText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/displayText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/displayText1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/displayText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/displayText2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/displayText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/displayText3"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/displayText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/displayText4"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
