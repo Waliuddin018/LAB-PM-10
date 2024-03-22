@@ -1,0 +1,9 @@
+<!-- rounded_toolbar_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="20dp" /> <!-- Sesuaikan nilai radius sesuai keinginan Anda -->
+
+    <solid android:color="@color/pink" /> <!-- Sesuaikan warna latar belakang sesuai keinginan Anda -->
+
+</shape>
