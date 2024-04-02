@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Note"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_border"
+            >
+
+
+            <EditText
+                android:id="@+id/et_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/et_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Content"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="SAVE"
+            android:backgroundTint="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
