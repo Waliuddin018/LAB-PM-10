@@ -59,22 +59,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (view == homeLayout) {
             selectedFragment = new HomeFragment();
-            // mengambil nama kelas dari HomeFragment dan menyimpannya
-            // dalam bentuk string ke dalam variabel fragmentName.
             fragmentName = HomeFragment.class.getSimpleName();
-
+            setActiveMenu(homeIconMenuIv, homeTextMenuTv, true);
+            setActiveMenu(postIconMenuIv, postTextMenuTv, false);
+            setActiveMenu(profileIconMenuIv, profileTextMenuTv, false);
+            setActiveMenu(searchIconMenuIv, searchIconMenuTv, false);
         } else if (view == searchLayout) {
             selectedFragment = new SearchFragment();
             fragmentName = SearchFragment.class.getSimpleName();
-
+            setActiveMenu(homeIconMenuIv, homeTextMenuTv, false);
+            setActiveMenu(postIconMenuIv, postTextMenuTv, false);
+            setActiveMenu(profileIconMenuIv, profileTextMenuTv, false);
+            setActiveMenu(searchIconMenuIv, searchIconMenuTv, true);
         } else if (view == postingLayout) {
             selectedFragment = new PostFragment();
             fragmentName = PostFragment.class.getSimpleName();
-
+            // Anda dapat menyesuaikan aktivasi menu sesuai kebutuhan
         } else if (view == profileLayout) {
             selectedFragment = new ProfileFragment();
             fragmentName = ProfileFragment.class.getSimpleName();
-
+            // Anda dapat menyesuaikan aktivasi menu sesuai kebutuhan
         }
 
         if (fragmentManager.findFragmentByTag(fragmentName) == null) {
@@ -100,6 +104,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void setActiveMenu(ImageView iconImageView, TextView textTextView, boolean isActive) {
         // Kode untuk mengatur tampilan ikon
-
+        // Anda dapat menyesuaikan kode ini sesuai dengan kebutuhan tampilan ikon
     }
 }

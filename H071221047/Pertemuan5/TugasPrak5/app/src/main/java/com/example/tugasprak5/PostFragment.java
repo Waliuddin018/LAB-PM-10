@@ -87,7 +87,7 @@ public class PostFragment extends Fragment {
                     Toast.makeText(requireContext(), "Post added successfully", Toast.LENGTH_SHORT).show();
 
                     FragmentManager fragmentManager =getParentFragmentManager();
-                    fragmentManager.beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                    fragmentManager.beginTransaction().replace(R.id.frame_layout, new HomeFragment()).commit();
                 } else {
                     Toast.makeText(requireContext(), "Please fill in content and select an image", Toast.LENGTH_SHORT).show();
                 }
