@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Praktikum 7</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="selamat_datang_H071221018">Selamat Datang, H071221018!</string>
+    <string name="logout">Logout</string>
+    <string name="setting">Setting</string>
+    <string name="register">Register</string>
+    <string name="nim">NIM</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="switch_thumb_off">#252525</color>
+    <color name="switch_track_off">#BDBDBD</color>
+
+    <color name="switch_thumb_on">#B89FD6</color>
+    <color name="switch_track_on">#552A8A</color>
+</resources>

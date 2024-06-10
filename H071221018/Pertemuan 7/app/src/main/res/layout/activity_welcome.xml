@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23.5dp"
+        android:layout_marginEnd="23.5dp"
+        android:maxWidth="100dp"
+        android:maxLength="27"
+        android:text="@string/selamat_datang_H071221018"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginTop="16dp"
+        android:text="@string/logout" />
+
+    <Button
+        android:id="@+id/buttonSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogout"
+        android:layout_marginTop="8dp"
+        android:text="@string/setting" />
+
+</RelativeLayout>
